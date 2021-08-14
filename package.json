@@ -1,16 +1,32 @@
 {
-  "name": "pagination",
+  "name": "vue-pre-pagination",
+  "description": "Simple & customizable vue pagination component",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name vue-pre-pagination src/components/Pagination.vue",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^3.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emresengul/vue-pre-pagination.git"
+  },
+  "bugs": {
+    "url": "https://github.com/emresengul/vue-pre-pagination/issues"
+  },
+  "homepage": "https://github.com/emresengul/vue-pre-pagination#readme",
+  "keywords": [
+    "pagination",
+    "vue pagination",
+    "pagination component"
+  ],
+  "author": "emresengul",
+  "license": "ISC",
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",

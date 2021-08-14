@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+    <pagination :records="50" :start="25"></pagination>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
-export default {
-  name: "App",
-  components: {
-    HelloWorld,
-  },
-};
+    import Pagination from "./components/Pagination.vue";
+    export default {
+      components: { Pagination },
+      name: "App",
+    };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.custom-pagination-class {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    margin-right: 0.45rem;
+    color: #fff;
+}
+.custom-active-class {
+    background-color: gray;
+    color: #000;
+    border-radius: 25px;
 }
 </style>
